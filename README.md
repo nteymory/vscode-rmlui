@@ -28,6 +28,10 @@ They cover RmlUi 6.3.
 
 ## Release Notes
 
+### 0.1.1
+
+Updated README
+
 ### 0.1.0
 
 Initial release
