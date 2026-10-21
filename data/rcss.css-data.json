@@ -1,0 +1,235 @@
+{
+    "version": 1.1,
+    "properties": [
+        {
+            "name": "decorator",
+            "description": "Draws one or more decorators behind the element's content: images, tiles, gradients, shaders or text. Takes a comma-separated list of decorator functions or @decorator names, each optionally followed by a paint area (border-box, padding-box or content-box).",
+            "values": [
+                { "name": "none" },
+                { "name": "image()", "description": "A single image or sprite, with optional flip and fit." },
+                { "name": "tiled-horizontal()", "description": "Left, centre and right images; the centre repeats horizontally." },
+                { "name": "tiled-vertical()", "description": "Top, centre and bottom images; the centre repeats vertically." },
+                { "name": "tiled-box()", "description": "Nine images: four corners, four edges and a centre." },
+                { "name": "ninepatch()", "description": "One image split into nine parts by an inner rectangle." },
+                { "name": "linear-gradient()" },
+                { "name": "repeating-linear-gradient()" },
+                { "name": "radial-gradient()" },
+                { "name": "repeating-radial-gradient()" },
+                { "name": "conic-gradient()" },
+                { "name": "repeating-conic-gradient()" },
+                { "name": "horizontal-gradient()", "description": "Straight gradient between two colours, left to right." },
+                { "name": "vertical-gradient()", "description": "Straight gradient between two colours, top to bottom." },
+                { "name": "shader()", "description": "Passes a value to the application's render interface to draw a custom shader." },
+                { "name": "text()", "description": "Draws a string of text." }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/decorators.html#decorator" }
+            ]
+        },
+        {
+            "name": "font-effect",
+            "description": "Applies one or more effects to the element's text. Inherited.",
+            "values": [
+                { "name": "none" },
+                { "name": "glow()", "description": "glow(<width-outline> <width-blur> [<offset-x> <offset-y>] <color>)" },
+                { "name": "outline()", "description": "outline(<width> <color>)" },
+                { "name": "shadow()", "description": "shadow(<offset-x> <offset-y> <color>)" },
+                { "name": "blur()", "description": "blur(<width> <color>)" }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/font_effects.html#font-effect" }
+            ]
+        },
+        {
+            "name": "image-color",
+            "description": "Colour multiplied into the images the element draws. Defaults to white, which leaves images unchanged.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/colours_backgrounds.html#image-color" }
+            ]
+        },
+        {
+            "name": "fill-image",
+            "description": "<progress> only: the image or sprite drawn for the filled part of the bar.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/cpp_manual/element_packages/progress_bar.html#fill-image" }
+            ]
+        },
+        {
+            "name": "nav",
+            "description": "Shorthand for nav-up, nav-right, nav-down and nav-left, in that order.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/user_interface.html#nav" }
+            ]
+        },
+        {
+            "name": "nav-up",
+            "description": "Where focus goes when navigating up with the arrow keys or a gamepad: a keyword, or an element id such as #start.",
+            "values": [
+                { "name": "none" },
+                { "name": "auto", "description": "The nearest focusable element in that direction." },
+                { "name": "horizontal" },
+                { "name": "vertical" },
+                { "name": "tree-order" }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/user_interface.html#nav" }
+            ]
+        },
+        {
+            "name": "nav-right",
+            "description": "Where focus goes when navigating right with the arrow keys or a gamepad: a keyword, or an element id such as #start.",
+            "values": [
+                { "name": "none" },
+                { "name": "auto", "description": "The nearest focusable element in that direction." },
+                { "name": "horizontal" },
+                { "name": "vertical" },
+                { "name": "tree-order" }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/user_interface.html#nav" }
+            ]
+        },
+        {
+            "name": "nav-down",
+            "description": "Where focus goes when navigating down with the arrow keys or a gamepad: a keyword, or an element id such as #start.",
+            "values": [
+                { "name": "none" },
+                { "name": "auto", "description": "The nearest focusable element in that direction." },
+                { "name": "horizontal" },
+                { "name": "vertical" },
+                { "name": "tree-order" }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/user_interface.html#nav" }
+            ]
+        },
+        {
+            "name": "nav-left",
+            "description": "Where focus goes when navigating left with the arrow keys or a gamepad: a keyword, or an element id such as #start.",
+            "values": [
+                { "name": "none" },
+                { "name": "auto", "description": "The nearest focusable element in that direction." },
+                { "name": "horizontal" },
+                { "name": "vertical" },
+                { "name": "tree-order" }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/user_interface.html#nav" }
+            ]
+        },
+        {
+            "name": "tab-index",
+            "description": "Whether the element is in the tab order. auto makes it focusable with Tab.",
+            "values": [
+                { "name": "none" },
+                { "name": "auto" }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/user_interface.html#tab-index" }
+            ]
+        },
+        {
+            "name": "focus",
+            "description": "Whether the element can receive focus. none prevents it. Inherited.",
+            "values": [
+                { "name": "none" },
+                { "name": "auto" }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/user_interface.html#focus" }
+            ]
+        },
+        {
+            "name": "drag",
+            "description": "How the element responds to being dragged.",
+            "values": [
+                { "name": "none" },
+                { "name": "drag", "description": "Sends drag events to the element." },
+                { "name": "drag-drop", "description": "Sends drag events, and drop events to the element it's released over." },
+                { "name": "block", "description": "Stops the drag from reaching ancestors." },
+                { "name": "clone", "description": "Drags a copy of the element." }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/user_interface.html#drag" }
+            ]
+        },
+        {
+            "name": "scrollbar-margin",
+            "description": "Shortens the element's scrollbars by this length, usually to leave room where the vertical and horizontal scrollbars meet.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/style_guide.html#scrollbar-margin" }
+            ]
+        },
+        {
+            "name": "transform-origin-x",
+            "description": "Horizontal component of transform-origin.",
+            "values": [
+                { "name": "left" },
+                { "name": "center" },
+                { "name": "right" }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/animations_transitions_transforms.html#transform-origin" }
+            ]
+        },
+        {
+            "name": "transform-origin-y",
+            "description": "Vertical component of transform-origin.",
+            "values": [
+                { "name": "top" },
+                { "name": "center" },
+                { "name": "bottom" }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/animations_transitions_transforms.html#transform-origin" }
+            ]
+        },
+        {
+            "name": "transform-origin-z",
+            "description": "Depth component of transform-origin.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/animations_transitions_transforms.html#transform-origin" }
+            ]
+        },
+        {
+            "name": "perspective-origin-x",
+            "description": "Horizontal component of perspective-origin.",
+            "values": [
+                { "name": "left" },
+                { "name": "center" },
+                { "name": "right" }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/animations_transitions_transforms.html#perspective-origin" }
+            ]
+        },
+        {
+            "name": "perspective-origin-y",
+            "description": "Vertical component of perspective-origin.",
+            "values": [
+                { "name": "top" },
+                { "name": "center" },
+                { "name": "bottom" }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/animations_transitions_transforms.html#perspective-origin" }
+            ]
+        }
+    ],
+    "atDirectives": [
+        {
+            "name": "@spritesheet",
+            "description": "Declares a sprite sheet. Set src to the image, then list each sprite as name: x y width height. Sprite names can be used wherever an image is accepted.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/sprite_sheets.html" }
+            ]
+        },
+        {
+            "name": "@decorator",
+            "description": "Declares a named decorator: @decorator name : type { properties }. Use the name in a decorator property.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rcss/decorators.html" }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,177 @@
+{
+    "version": 1.1,
+    "tags": [
+        {
+            "name": "rml",
+            "description": "Root element of an RmlUi document, in place of <html>.",
+            "attributes": [],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rml/documents.html#rml" }
+            ]
+        },
+        {
+            "name": "body",
+            "description": "The document's content.",
+            "attributes": [
+                {
+                    "name": "template",
+                    "description": "Name of a template to wrap the body in. The template file must be linked from <head> with type=\"text/template\"."
+                }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rml/templates.html" }
+            ]
+        },
+        {
+            "name": "template",
+            "description": "Root element of an RmlUi template file. Documents use it through <body template=\"name\">.",
+            "attributes": [
+                {
+                    "name": "name",
+                    "description": "Name documents use to refer to this template."
+                },
+                {
+                    "name": "content",
+                    "description": "Id of the element that receives the document's body content."
+                }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rml/templates.html" }
+            ]
+        },
+        {
+            "name": "handle",
+            "description": "Moves or resizes another element when dragged.",
+            "attributes": [
+                {
+                    "name": "move_target",
+                    "description": "Element to move: an element id, #document or #parent."
+                },
+                {
+                    "name": "size_target",
+                    "description": "Element to resize: an element id, #document or #parent."
+                },
+                {
+                    "name": "edge_margin",
+                    "description": "Minimum distance between the target and the edges of its containing block, as one to four lengths or percentages (top, right, bottom, left), or none. Defaults to 0px."
+                }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rml/controls.html#handle" }
+            ]
+        },
+        {
+            "name": "tabset",
+            "description": "Container for <tab> and <panel> elements.",
+            "attributes": [],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rml/controls.html#tabset" }
+            ]
+        },
+        {
+            "name": "tab",
+            "description": "Button in a <tabset>. Clicking it shows its matching <panel> and hides the others.",
+            "attributes": [],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rml/controls.html#tab" }
+            ]
+        },
+        {
+            "name": "panel",
+            "description": "Content of a <tabset>, shown when its matching <tab> is selected.",
+            "attributes": [],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rml/controls.html#panel" }
+            ]
+        },
+        {
+            "name": "progress",
+            "description": "Progress bar or gauge. Style the filled part with the fill-image property.",
+            "attributes": [
+                {
+                    "name": "direction",
+                    "description": "Direction the bar fills as the value increases. Defaults to right.",
+                    "values": [
+                        { "name": "top" },
+                        { "name": "right" },
+                        { "name": "bottom" },
+                        { "name": "left" },
+                        { "name": "clockwise" },
+                        { "name": "counter-clockwise" }
+                    ]
+                },
+                {
+                    "name": "start-edge",
+                    "description": "Edge a clockwise or counter-clockwise bar starts from. Defaults to top.",
+                    "values": [
+                        { "name": "top" },
+                        { "name": "right" },
+                        { "name": "bottom" },
+                        { "name": "left" }
+                    ]
+                }
+            ],
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/rml/data_display.html#progress" }
+            ]
+        }
+    ],
+    "globalAttributes": [
+        {
+            "name": "data-model",
+            "description": "Binds the element and its descendants to the named data model, so they can use data bindings.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/data_bindings/model.html" }
+            ]
+        },
+        {
+            "name": "data-if",
+            "description": "Hides the element (display: none) while the expression is false.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/data_bindings/views_and_controllers.html#data-if" }
+            ]
+        },
+        {
+            "name": "data-visible",
+            "description": "Sets visibility: hidden while the expression is false. The element keeps its size.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/data_bindings/views_and_controllers.html#data-visible" }
+            ]
+        },
+        {
+            "name": "data-for",
+            "description": "Repeats the element for each item in an array: [iterator], [index] : array. The names default to it and it_index.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/data_bindings/views_and_controllers.html#data-for" }
+            ]
+        },
+        {
+            "name": "data-rml",
+            "description": "Sets the element's inner RML to the value of the expression.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/data_bindings/views_and_controllers.html#data-rml" }
+            ]
+        },
+        {
+            "name": "data-value",
+            "description": "Two-way binding between the element's value and a data variable, usually on <input>.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/data_bindings/views_and_controllers.html#data-value" }
+            ]
+        },
+        {
+            "name": "data-checked",
+            "description": "Two-way binding between a checkbox or radio button's checked state and a data variable.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/data_bindings/views_and_controllers.html#data-checked" }
+            ]
+        },
+        {
+            "name": "data-event-click",
+            "description": "Runs an assignment or callback when the element is clicked. Any event works as data-event-[event]; separate statements with semicolons.",
+            "references": [
+                { "name": "RmlUi docs", "url": "https://mikke89.github.io/RmlUiDoc/pages/data_bindings/views_and_controllers.html#data-event" }
+            ]
+        }
+    ]
+}

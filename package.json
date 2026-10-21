@@ -1,0 +1,49 @@
+{
+    "name": "rmlui",
+    "displayName": "RmlUi",
+    "description": "A Visual Studio Code extension for RmlUi development",
+    "icon": "images/logo.png",
+    "version": "0.1.0",
+    "publisher": "nteymory",
+    "author": {
+        "name": "Neema Teymory"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nteymory/vscode-rmlui/issues"
+    },
+    "homepage": "https://github.com/nteymory/vscode-rmlui",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nteymory/vscode-rmlui.git"
+    },
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "rmlui",
+        "rml",
+        "rcss"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "html",
+                "extensions": [".rml"]
+            },
+            {
+                "id": "css",
+                "extensions": [".rcss"]
+            }
+        ],
+        "html": {
+            "customData": ["./data/rml.html-data.json"]
+        },
+        "css": {
+            "customData": ["./data/rcss.css-data.json"]
+        }
+    }
+}
