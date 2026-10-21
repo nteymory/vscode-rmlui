@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.1.2
+
+Updated logo
+
 ### 0.1.1
 
 Updated README

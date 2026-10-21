@@ -3,7 +3,7 @@
     "displayName": "RmlUi",
     "description": "A Visual Studio Code extension for RmlUi development",
     "icon": "images/logo.png",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "nteymory",
     "author": {
         "name": "Neema Teymory"
