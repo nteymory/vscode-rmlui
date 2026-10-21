@@ -10,8 +10,6 @@ RML is close to XHTML and RCSS is close to CSS, so this extension doesn't add ne
 * Autocomplete and hover docs for those properties and their keywords, with links to the RmlUi documentation
 * RML elements and attributes: `<rml>`, `<handle>`, `<tabset>`, `<tab>`, `<panel>`, `<template>`, `<body template>`, `<progress direction>`, and the data binding attributes (`data-model`, `data-if`, `data-for`, `data-value` and others)
 
-If you had `files.associations` entries mapping `*.rml` or `*.rcss` to HTML and CSS, you can remove them.
-
 ## Known Issues
 
 * RmlUi's additions apply to all HTML and CSS files, so they also show up in autocomplete in ordinary web files
@@ -26,7 +24,7 @@ Everything lives in two [custom data](https://github.com/microsoft/vscode-custom
 * `data/rcss.css-data.json`: RCSS properties and at-rules
 * `data/rml.html-data.json`: RML elements and attributes
 
-They cover RmlUi 6.3. The RCSS properties come from `Source/Core/StyleSheetSpecification.cpp` in RmlUi, keeping only names standard CSS doesn't already have. Elements, decorators, font effects and data views come from `Source/Core/Factory.cpp`.
+They cover RmlUi 6.3.
 
 ## Release Notes
 
